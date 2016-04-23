@@ -20,4 +20,11 @@ describe ShaqLib do
       expect(ShaqLib.submers str).to eq %w[abc bcd]
     end
   end
+
+  # describe "::count" do
+  #   it "counts unique args" do
+  #     hash = { "1" => 2, "2" => 1 }
+  #     expect(ShaqLib.count ["1", "1", "2"]).to eq hash
+  #   end
+  # end
 end
