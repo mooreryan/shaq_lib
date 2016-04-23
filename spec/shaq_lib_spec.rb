@@ -13,4 +13,11 @@ describe ShaqLib do
         to yield_successive_args("abc", "bcd", "cde", "def")
     end
   end
+
+  describe "::submers" do
+    it "returns first and last k-1mer of the kmer" do
+      str = "abcd"
+      expect(ShaqLib.submers str).to eq %w[abc bcd]
+    end
+  end
 end
